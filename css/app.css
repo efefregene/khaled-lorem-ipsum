@@ -1,0 +1,22 @@
+h3 {
+	text-align: center;
+}
+
+#main {
+	padding: 5rem;
+}
+
+#button {
+	position: relative;
+	float: right;
+}
+
+#spot {
+	border: 1px solid #D3D3D3;
+	font-style: italic;
+}
+
+
+
+
+

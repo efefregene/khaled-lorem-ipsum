@@ -1,0 +1,1 @@
+I'm basically wetting my JS appetite, so please criticize away. Also I will be update this Khaled Repo as much as I can
