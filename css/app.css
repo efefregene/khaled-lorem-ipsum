@@ -1,9 +1,17 @@
 h3 {
 	text-align: center;
 }
+#motto {
+	text-align: center;
+	font-style: italic;
+}
 
 #main {
 	padding: 5rem;
+}
+
+section {
+	margin: 1rem;
 }
 
 #button {
@@ -11,9 +19,21 @@ h3 {
 	float: right;
 }
 
-#spot {
+#asahd {
 	border: 1px solid #D3D3D3;
 	font-style: italic;
+	padding: 2rem;
+}
+
+
+.centre-button {
+	text-align: center;
+	margin: auto;
+}
+
+#button1 {
+	margin: 1rem 0 0 0;
+	visibility: hidden;
 }
 
 

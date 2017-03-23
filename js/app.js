@@ -1,6 +1,6 @@
 window.onload = function () {};
 
-color = ['red', 'orange', 'green', 'blue', 'indigo', 'violet'];
+var color = ['OrangeRed', 'Peru', 'DarkSeaGreen', 'CornflowerBlue', 'LightBlue', 'RosyBrown', 'LightSteelBlue', 'LavenderBlush', 'Lavender', 'Khaki', 'DarkKhaki'];
 var khaledQuotes = [];
 
 khaledQuotes[0] = "\"You smart, You very smart, We the best, You a genius ,"
@@ -46,22 +46,27 @@ function genKhaled(id) {
     }
 
     for (var i = 0; i < paragraphs; i++) {
-        randomKhaleds = randomNum(khaledQuotes.length);
+        randomKhaleds = randomize(khaledQuotes.length);
+        randomColor = color[randomize(color.length)];
         demKhaleds += khaledQuotes[randomKhaleds] + "<br><br>";
-        document.getElementById(id).innerHTML = demKhaleds;
+        document.getElementById(id).innerHTML = '<div id = "asahd" style = "background-color: '+ randomColor + '">' + demKhaleds + '</div>';
         document.getElementById(id).style.fontWeight = "normal";
-        document.getElementById(id).style.fontStyle = "italic";
-
-        
+        document.getElementById(id).style.fontStyle = "italic";      
 
 	}
-}
-document.getElementById('spot').style.display = "none";
-function show(target) {
-	document.getElementById('spot').style.display = "block";
+
 }
 
+
+function show() {
+	document.getElementById('button1').style.visibility = "visible"
+}
+
+function runAll (id){
+	genKhaled('spot');
+	show();
+}
 // Helper functions
-function randomNum (length) {
+function randomize (length) {
     return Math.floor(Math.random() * length);
 }
