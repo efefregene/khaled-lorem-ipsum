@@ -7,26 +7,28 @@ h3 {
 }
 
 #main {
-	padding: 5rem;
+	padding: 1rem;
 }
 
 section {
 	margin: 1rem;
 }
-
-#button {
+#form-div{
+	padding: 1rem;
+}
+#button{
 	position: relative;
-	float: right;
+	float: left;
 }
 
 #asahd {
 	border: 1px solid #D3D3D3;
 	font-style: italic;
-	padding: 2rem;
+	padding: 1rem;
 }
 
 
-.centre-button {
+#centre-button {
 	text-align: center;
 	margin: auto;
 }

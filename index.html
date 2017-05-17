@@ -12,23 +12,33 @@
     
   
   <section>
-    <div id="main" class="large-12 columns">
+    <div class="row">
+      <div id="main" class="large-12 columns">
         <h3>DJ Khaled Lorem Ipsum Generator</h3>
         <p id="motto">Blessing you up with dem major keys..</p><br>
-        <form>
-            <input class="form-control" type="number" id="paragraph" name="paragraph" placeholder="How many Khaled Motivation quotes do you need? 1, 2, 3 etc.">
-
-
-            <input class="button" type="button" id="button" onclick="runAll('spot');" value="Generate">
-            
-        </form>
+      </div>
     </div>
+    <form>
+      <div id="form-div" class="row">
+        <div class="large-offset-1 large-8 columns">
+          <input class="form-control" type="number" id="paragraph" name="paragraph" placeholder="Don't play yourselves, how many keys do you want? ">
+        </div>
+        <div class="large-3 columns">
+          <input class="button" type="button" id="button" onclick="runAll('spot');" value="Generate">
+        </div>   
+      </div>         
+    </form>
 
     <div class="row">
-    <div id="spot" class="large-12 columns"></div>
-    <div class="centre-button">
-      <input class="button" type="button" id="button1" onclick="genKhaled('spot'); show()" value="Another One">
+      <div id="spot" class="large-offset-1 large-9 columns">
+      </div>
     </div>
+    <div class="row">
+      <div class="large-offset-5 large-1 columns">
+        <div class="centre-button">
+         <input class="button" type="button" id="button1" onclick="genKhaled('spot'); show()" value="Another One">
+        </div>
+      </div>
     </div>
   </section>
 
